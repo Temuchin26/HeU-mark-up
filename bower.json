@@ -1,0 +1,21 @@
+{
+  "name": "Gulp Assembly",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Temuchin <temuchin26@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}
