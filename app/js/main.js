@@ -1,7 +1,5 @@
-console.log("Ready");
-$("h1").click(function(){
-  $("h1").css({
-    "transition": "0.5s",
-    "transform": "rotateX(180deg)"
-  })
-})
+function myFunc(smt = "ES 6 COOL!"){
+  return smt
+}
+
+console.log(myFunc())

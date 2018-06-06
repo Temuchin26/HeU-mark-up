@@ -11,7 +11,13 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     ftp = require('gulp-ftp'),
     concat = require('gulp-concat'),
-    prefix = require('gulp-autoprefixer');
+    prefix = require('gulp-autoprefixer'),
+    babel = require('gulp-babel');
+
+const paths = {
+  allSrcJs: 'app/js/*.js',
+  build: './build/js',
+};
 
 gulp.task('server', function() {
     browserSync.init({
@@ -48,6 +54,7 @@ gulp.task('fonts',['clean'], function () {
 gulp.task('build', ['clean'], function(){
   gulp.src('./app/*.html')
     .pipe(useref())
+    .pipe(gulpIf('*.js',babel()))
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', csso()))
     .pipe(gulp.dest('./build'))

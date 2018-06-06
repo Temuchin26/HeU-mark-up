@@ -1,10 +1,19 @@
 {
-  "name": "",
-  "version": "",
+  "name": "Gulp boiler-plate build",
+  "version": "1.1",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-latest": "^6.24.1",
     "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-ftp": "^1.1.0",
