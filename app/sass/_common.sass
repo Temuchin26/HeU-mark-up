@@ -41,6 +41,23 @@ table
   border-collapse: collapse
   border-spacing: 0
 
+a
+  color: white
+  text-decoration: none
+  &:hover
+    color: white
+    text-decoration: none
+
+button
+  border: none
+  cursor: pointer
+
 @mixin q($sizes)
   @media (max-width: $sizes)
     @content
+
+@mixin m($sizes)
+  @media (min-width: $sizes)
+    @content
+
+

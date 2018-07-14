@@ -1,10 +1,10 @@
 {
-  "name": "Gulp boiler-plate build",
-  "version": "1.1",
-  "babel": {
-    "presets": [
-      "latest"
-    ]
+  "name": "heyu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "get-env": "^0.5.10"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -24,5 +24,18 @@
     "gulp-useref": "^3.1.4",
     "gulp-util": "^3.0.8",
     "rimraf": "^2.6.2"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temuchin26/GULP.git"
+  },
+  "author": "Temuchin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Temuchin26/GULP/issues"
+  },
+  "homepage": "https://github.com/Temuchin26/GULP#readme"
 }

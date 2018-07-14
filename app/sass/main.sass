@@ -1,7 +1,343 @@
 @import "common"
+$grey: #808080
+$black: #363636
+$grad: linear-gradient(to top, #eb402c, #d90647); 
+html 
+  font-size: 62.5%
+  font-family: Lato, sans-serif
+  color: white
+  
+section,header,footer
+  box-sizing: border-box
+  // width: 1200px
+  // margin: 0 auto
+  font-size: 1.8rem
 
-h1
-  font-size: 50px
-  color: blue
-  font-family: sans-serif
+hr 
+  background-color: #e0e0e0
+
++q(992px)
+  html
+    font-size: 5px
++q(500px)
+  html
+    font-size: 4px
+
+// +q(500px)
+//   .container
+//     padding: 0 2rem
+
+.titleDot
+  font-size: 6rem
+  font-wight: 900
+  color: $black
+  &:after
+    content: '.'
+    color: #d90647  
+
+.text
+  color: $grey
+  text-align: left
+  font-size: 18px
+  line-height: 1.78
+
+.start 
+  overflow: hidden
+  position: relative
+  width: 100%
+  background: $grad
+  #treangle
+    position: absolute
+    border-bottom: 30vh solid white
+    border-left: 100vw solid transparent
+    bottom: 0
+    z-index: 0
+    
+.header
+  position: absolute
+  top: 4rem
+  left: 0 
+  right: 0
+  width: 100%
+  margin: 0 auto
+  line-height: 0
+  color: white
+  z-index: 2000
+  +m(1600px)
+    width: 85%
+  &__logo
+    font-size: 5rem
+    font-weight: 900
+  &__nav
+    width: 40rem
+    display: flex
+    justify-content: space-between
+  &__link 
+    cursor: pointer
+    text-transform: uppercase
+
+.intro
+  position: relative
+  z-index: 1
+  width: 100%
+  height: 95rem
+  color: white
+  .test
+    align-self: flex-end !important
+  &__img 
+    height: 75rem
+    position: relative
+    align-content: flex-end
+  &__title
+    font-size: 7.2rem
+    letter-spacing: 0.29rem
+    font-weight: 900
+    padding: 20rem 0px 4rem 0px
+  &__subTitle
+    font-size: 2.4rem
+    span 
+      font-weight: 900
+  &__btn 
+    background-color: white
+    height: 5rem
+    width: 22.5rem
+    border-radius: 2.5rem
+    font-weight: bold
+    color: #d90647
+    margin-top: 12rem
+
+.about 
+  padding: 2rem 0rem 20rem 0rem
+  +q(600px)
+    padding-top: 10rem
+  .titleDot
+    padding-bottom: 4rem
+    +q(350px)
+      word-wrap: break-word
+  .text
+    +q(550px)
+      text-align: justify
+  &__img
+    position: relative
+    width: 48rem
+  .left
+    left: -8.6rem
+    +q(655px)
+      left: 0
+      margin-bottom: -5rem
+  .right
+    right: -8.6rem
+    +q(655px)
+      right: 0
+      margin-bottom: -5rem
+  #second 
+    +q(655px)
+      padding-top: 10rem
+
+.comment
+  padding-bottom: 24rem
+  .cont
+    +q(586px)
+      width: 70%
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 4rem
+    &:hover
+      .comment__body      
+        margin-top: -4rem
+        margin-bottom: 7.3rem
+        border: white
+        box-shadow: 0px 50px 85px 7px #E8E8E8
+      .st0
+        stroke: white !important
+        stroke-width: 1px
+  .titleDot
+    text-align: center
+    padding-bottom: 12.5rem
+  &__body
+    padding: 3rem 5.5rem 2.5rem 3rem
+    transition: 0.5s
+    position: relative
+    border: 1px solid #E8E8E8
+    margin-bottom: 3rem
+  &__text
+    font-style: italic
+    color: $grey
+    line-height: 1.78
+    padding-bottom: 2.5rem
+  &__subText 
+    letter-spacing: 1.1px
+    font-weight: bold
+    color: #d90647
+    &:hover
+      color: #d90647
+  &__lineWrap
+    padding-left: 2rem
+  &__img
+    width: 6rem
+  &__name
+    color: $black 
+    font-weight: bold
+  &__position 
+    padding-top: 1rem
+    letter-spacing: 1px
+    font-weight: bold
+    color: #667386
+    font-size: 1.6rem
+  svg
+    width: 3rem
+    height: 2.5rem
+    position: absolute
+    bottom: -2rem
+    z-index: 1000
+    left: 1.5rem
+    
+.grad
+  width: 100%
+  background-image: $grad
+
+.video
+  color: white
+  height: 52rem
+  text-align: right
+  position: relative
+  &__wrap
+    padding-bottom: 5rem
+  &__title
+    font-size: 2.4rem 
+    font-weight: 900
+    letter-spacing: 1.4px
+    padding-bottom: 2rem
+  &__text    
+    font-size: 1.6rem
+    line-height: 1.75
+    opacity: 0.6
+    letter-spacing: 1px   
+  &__img
+    margin-left: 4rem
+    width: 5rem
+    height: 5rem 
+  .right
+    height: 3.5rem
+    width: 4.5rem
+  .rightT
+    text-align: left
+    .video__img
+      margin: 0px
+      margin-right: 4rem
+  &__phone
+    width: 32rem
+    height: 71rem
+  .vid
+    position: absolute
+    top: 8.2rem
+    left: 0
+    right: 0.1rem
+    margin: 0 auto
+    width: 27.4rem
+    height: 52.1rem
+    z-index: 1000
+    background-color: black
+    display: none
+  .play
+    position: absolute
+    z-index: 100
+    top: 0
+    bottom: 2.3rem
+    left: 0
+    right: 0
+    cursor: pointer
+    margin: auto
+    width: 5.5rem
+    height: 5.5rem
+  &__video 
+    position: absolute
+    top: -8.4rem
+    left: 0
+    right: 0
+    width: 32rem
+    margin-left: auto
+    margin-right: auto
+    &:after
+      content: ''
+      position: absolute
+      top: 8.2rem
+      left: 0
+      right: 0.1rem
+      margin: 0 auto
+      width: 27.4rem
+      height: 52.1rem
+      background-color: rgba(black, 0.5)
+
+.subscribe
+  text-align: center
+  padding: 23rem 0px 15rem 0px
+  .text
+    padding: 4rem 0rem 7rem 0rem
+    line-height: normal
+    text-align: center
+  form
+    display: flex
+    justify-content: center 
+  &__inp
+    border: none
+    background-color: #f8f8f8
+    height: 5rem
+    width: 37rem
+    margin-right: -3rem
+    border-radius: 2.5rem
+    font-size: 1.8rem
+    color: $grey
+    padding: 0 3rem
+    &:focus
+      border: none
+  &__btn
+    border-radius: 2.5rem 
+    height: 5rem
+    width: 18rem
+    box-shadow: 0px 10px 30px 0 rgba(223, 27, 61, 0.3)
+    background-image: $grad
+    color: white
+    
+.download 
+  padding: 10rem 0rem 15rem 0rem
+  text-align: center
+  .titleDot
+    padding: 5.5rem 0rem 4rem 0rem
+  .text
+    text-align: center
+  img
+    cursor: pointer
+  &__img
+    width: 16rem
+    height: 16rem
+  &__imgApp
+    margin-top: 6rem
+    width: 18.5rem
+    height: 6rem
+
+.footer 
+  height: 10.5rem
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0rem 10%
+  &__nav 
+    width: 58rem
+    display: flex
+    justify-content: space-between
+  &__img
+    height: 2.5rem
+  &__link 
+    text-transform: uppercase
+    color: $black
+    &:hover
+      color: $black
+  &__language 
+    border: none
+    width: 15rem
+    height: 5rem
+    font-size: 1.8rem
+    color: $black
   

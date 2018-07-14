@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
 
     <!-- build:css css/vendor.min.css -->
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
@@ -15,8 +16,247 @@
   </head>
   <body>
 
-    <h1>Ready</h1>
-    <img src="img/me-waiting-for-my-post-to-be-noticed-bcs-i-thought-it-was-lit.jpg" alt="">
+    <section class="start">
+      <header class="header">
+        <div class="container d-flex justify-content-between">
+          <h2 class="header__logo">HeyU</h2>
+          <nav class="header__nav">
+            <a href="#" class="header__link">about</a>
+            <a href="#" class="header__link">faq</a>
+            <a href="#" class="header__link">support</a>
+            <a href="#" class="header__link">blog</a>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="intro">
+        <div class="container h-100 d-flex justify-content-between">
+          <div>
+              <h1 class="intro__title">Simple, safe <br> & beautiful.</h1>
+              <h4 class="intro__subTitle">With <span>HeyU</span>, you'll get fast, simple, secure messaging!</h4>
+              <button class="intro__btn">Download now</button>
+            </div>
+          <div class="test">
+            <img src="./img/phoneIntro.png" alt="" class="intro__img">
+          </div>
+        </div>
+      </section>
+      <div id="treangle"></div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+          <div class="d-sm-flex d-block align-items-sm-center justify-content-between">
+              <div class="float-left float-sm-none">
+                <img src="./img/chat1.png" alt="" class="about__img left">
+              </div>
+              <div>
+                <h2 class="titleDot">Easy Messaging</h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt uto 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat.
+                </p> 
+              </div>
+            </div>
+      
+        <div class="d-sm-flex flex-row-reverse d-block align-items-sm-center justify-content-between" id="second">
+          <div class="float-right float-sm-none">
+            <img src="./img/chat2.png" alt="" class="about__img right">
+          </div>
+          <div>
+            <h2 class="titleDot">Keep in touch</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt uto 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+    
+    <section class="comment">
+      <div class="container">
+        <h2 class="titleDot">What people say</h2>
+        <div class="row">
+          <div class="col-12 col-sm-4 cont">
+            <div class="comment__body">
+              <p class="comment__text">
+                Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim            
+              </p>
+              <a href="#" class="comment__subText">Booking.com</a>
+              <svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#FFFFFF;stroke:#E5E5E5;stroke-width:1;stroke-linecap:round;stroke-miterlimit:10;}
+              </style>
+              <polyline class="st0" points="1.8,2.8 7.9,13 14,2.8 "/>
+              </svg>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="./img/user1.png" alt="" class="comment__img">
+              <div class="comment__lineWrap">
+                <p class="comment__name">John Doe</p>
+                <p class="comment__position">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 cont">
+              <div class="comment__body">
+                <p class="comment__text">
+                  Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                </p>
+                <a href="#" class="comment__subText">Airnbnb</a>
+                <svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:#FFFFFF;stroke:#E5E5E5;stroke-width:1;stroke-linecap:round;stroke-miterlimit:10;}
+                </style>
+                <polyline class="st0" points="1.8,2.8 7.9,13 14,2.8 "/>
+                </svg>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="./img/user2.png" alt="" class="comment__img">
+                <div class="comment__lineWrap">
+                  <p class="comment__name">John Doe</p>
+                  <p class="comment__position">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 cont">
+                <div class="comment__body">
+                  <p class="comment__text">
+                    Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                  <a href="#" class="comment__subText">Symu.co</a>
+                  <svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#FFFFFF;transition: 0.5s;stroke:#E5E5E5;stroke-width:1;stroke-linecap:round;stroke-miterlimit:10;}
+                  </style>
+                  <polyline class="st0" points="1.8,2.8 7.9,13 14,2.8 "/>
+                  </svg>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img src="./img/user1.png" alt="" class="comment__img">
+                  <div class="comment__lineWrap">
+                    <p class="comment__name">John Doe</p>
+                    <p class="comment__position">CEO</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grad">
+      <section class="video">
+        <div class="container h-100">
+          <div class="row d-flex h-100 align-items-center">
+            <div class="col-4">
+              <div class="video__wrap d-flex">
+                <div>
+                    <h3 class="video__title">
+                        Start conversation
+                    </h3>
+                    <p class="video__text">
+                        Lorem ipsum dolor sit amet, consectetur<wbr> adipisicing elit, sed do eiusmod tempor incididunt ut
+                    </p>
+                </div>
+                <img src="./img/video1.png" alt="" class="video__img">
+              </div>
+              <div class="video__wrap d-flex ">
+                <div>
+                    <h3 class="video__title">
+                        Make free call
+                    </h3>
+                    <p class="video__text">
+                        Lorem ipsum dolor sit amet, consectetur<wbr> adipisicing elit, sed do eiusmod tempor incididunt ut
+                    </p>
+                </div>
+                <img src="./img/video2.png" alt="" class="video__img">
+              </div>
+            </div>
+            <div class="col-4 offset-4">
+              <div class="video__wrap d-flex rightT">
+                <img src="./img/video3.png" alt="" class="right video__img">
+                <div>
+                  <h3 class="video__title">
+                    Make free call
+                  </h3>
+                  <p class="video__text">
+                    Lorem ipsum dolor sit amet, consectetur<wbr> adipisicing elit, sed do eiusmod tempor incididunt ut
+                    </p>
+                  </div>
+              </div>
+              <div class="video__wrap d-flex rightT">
+                <img src ="./img/video4.png" alt="" class="right video__img">
+                <div>
+                  <h3 class="video__title">
+                    Make free call
+                  </h3>
+                  <p class="video__text">
+                    Lorem ipsum dolor sit amet, consectetur<wbr> adipisicing elit, sed do eiusmod tempor incididunt ut
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="video__video">
+            <img src="./img/phoneVideo1.png" class="video__phone" alt="">
+            <img src="../img/playButton.png" alt="" class="play">
+            <video src="./img/OldFashionedFilmLeaderCountdownVidevo.mp4" controls class="vid"></video>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="titleDot">Subscribe to our newsletter</h2>  
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        </p>
+        <form action="">
+          <input type="text" placeholder="Your email adress" class="subscribe__inp">
+          <button type="submit" class="subscribe__btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    
+    <hr>
+    
+    <section class="download">
+      <div class="container d-flex align-items-center flex-column">
+        <img src="./img/download.png" alt="" class="download__img">
+        <h3 class="titleDot">Download the app</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt uto eiusmod tempor incididunt ut labore et 
+          dolore magna
+        </p>
+        <img src="./img/appStore.png" alt="" class="download__imgApp">
+      </div>
+    </section>
+    
+    <hr>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="#" class="footer__link">about</a>
+        <a href="#" class="footer__link">faq</a>
+        <a href="#" class="footer__link">support</a>
+        <a href="#" class="footer__link">blog</a>
+        <a href="#" class="footer__link">download</a>
+      </nav>
+      <select class="footer__language">
+        <option value="wd">English</option>
+        <option value="wd">Spanish</option>
+        <option value="wd">Russian</option>
+        <option value="wd">Ukrainian</option>
+      </select>
+    </footer>
+
   <!-- build:js js/vendor.min.js -->
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <!-- endbuild -->
